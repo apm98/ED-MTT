@@ -34,7 +34,8 @@ def test(cfg: DictConfig):
   trained_model = model.EngagementPredictor.load_from_checkpoint(
       best_model_path,
       n_features = data_module.train_dataset[0]["anchor_sequence"].shape[1],
-      hparam = cfg.model)
+      hparam = cfg.model,
+      map_location=torch.device(cpu))
 
   trained_model.freeze()
   predictions =[]
