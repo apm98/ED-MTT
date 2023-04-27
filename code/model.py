@@ -14,7 +14,7 @@ from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping, Learning
 from pytorch_lightning.loggers import TensorBoardLogger
 import torchmetrics
 from torchmetrics.functional import accuracy
-from pytorch_lightning.tuner.lr_finder import lr_find
+#from pytorch_lightning.tuner.lr_finder import lr_find
 from pytorch_lightning.callbacks import EarlyStopping
 import hydra
 from omegaconf import DictConfig, OmegaConf
